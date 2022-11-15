@@ -1,0 +1,18 @@
+@import "./variables";
+header {
+  height: 7vh;
+  background-color: red;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+  .nav-list {
+    display: none;
+  }
+  .nav-icon {
+  }
+  .logo {
+  }
+}

@@ -1,0 +1,31 @@
+@import "scss/banner";
+@import "scss/header";
+@import "scss/utils";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+  color: #1d1d1d;
+}
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.wrapper-home {
+  display: grid;
+  // grid-template-columns: 1fr;
+}
