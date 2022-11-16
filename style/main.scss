@@ -19,13 +19,17 @@ html {
   box-sizing: inherit;
   color: #1d1d1d;
 }
-main {
+.wrapper-home {
+  display: grid;
+  grid-template-columns: 1fr;
+
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: -1;
 }
-.wrapper-home {
-  display: grid;
-  // grid-template-columns: 1fr;
+footer {
+  position: absolute;
+  bottom: 0;
 }

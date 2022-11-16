@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css"
+      integrity="sha512-pJrGHWDVOeiy4UkMtHu0fpD8oLLssFcaW0fsVXUkA1/jDLopa554Z1AZo5SKtekHnnmyat0ipiP0snKDrt0GNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style/main.css" />
     <title>Education</title>
   </head>
@@ -21,7 +28,29 @@
       </nav>
     </header>
     <main class="wrapper-home">
-      <section class="hero" style="background-color: wheat">banner</section>
+      <section class="hero" style="background-color: wheat">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/banner-1.jpg" alt="banner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/banner-2.jpg" alt="banner" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/banner-3.jpg" alt="banner" />
+            </div>
+          </div>
+          <!-- pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!--  navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
       <section class="hero-content" style="background-color: gray">
         banner content
       </section>
@@ -41,5 +70,11 @@
       <section class="events" style="background-color: pink"></section>
     </main>
     <footer>footer section</footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
+      integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
