@@ -6,26 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css"
-      integrity="sha512-pJrGHWDVOeiy4UkMtHu0fpD8oLLssFcaW0fsVXUkA1/jDLopa554Z1AZo5SKtekHnnmyat0ipiP0snKDrt0GNg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./style/main.css" />
     <title>Education</title>
   </head>
   <body>
-    <header class="container">
-      <h1 class="logo">Logo</h1>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Admission</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
-        </ul>
-        <div class="nav-icon"><span>menu</span></div>
-      </nav>
+    <header>
+      <div class="header-wrapper container">
+        <h1 class="logo">Logo</h1>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Admission</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+          <div class="menu-icon"><span>&nbsp;</span></div>
+        </nav>
+      </div>
+      <div class="menu-page">
+        <nav class="nav">
+          <div class="nav-list nav-list-show">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Admission</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="wrapper-home">
       <section class="hero" style="background-color: wheat">
@@ -44,15 +53,27 @@
             </div>
           </div>
           <!-- pagination -->
-          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-pagination"></div> -->
 
           <!--  navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- <div class="swiper-button-prev"></div> -->
+          <!-- <div class="swiper-button-next"></div> -->
         </div>
       </section>
-      <section class="hero-content" style="background-color: gray">
-        banner content
+      <section class="hero-content">
+        <div class="hero-box container">
+          <h1>getting you where you want</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus earum
+            sint, recusandae iste deserunt exercitationem at. Laboriosam, esse
+            id culpa error accusamus quidem iure repudiandae consequatur dolorem
+            explicabo veritatis est.
+          </p>
+          <div class="hero-buttons">
+            <button>Get Start</button>
+            <button>Enquiry</button>
+          </div>
+        </div>
       </section>
       <!-- next section -->
       <section class="events" style="background-color: purple">Events</section>
@@ -70,11 +91,13 @@
       <section class="events" style="background-color: pink"></section>
     </main>
     <footer>footer section</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
-      integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./script/app.js"></script>
   </body>
 </html>

@@ -1,20 +1,80 @@
 @import "./variables";
-header {
+.header-wrapper {
   height: 7vh;
-  background-color: red;
   color: $white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1;
-
   .nav-list {
     display: none;
   }
-  .nav-icon {
-    font-size: 1.8rem;
-  }
   .logo {
     font-size: 2.4rem;
+  }
+}
+.menu-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  .nav {
+    margin-top: 10rem;
+    &-item {
+      margin-bottom: 3rem;
+    }
+  }
+}
+.nav {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-item a {
+    font-size: 2rem;
+    color: $sec-col;
+  }
+}
+// nav menu icon desing
+
+.menu-icon {
+  width: 3.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 33;
+  cursor: pointer;
+  span {
+    width: 100%;
+    height: 4px;
+    display: inline-block;
+    background-color: $sec-col;
+  }
+  span::before,
+  span::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    background-color: $sec-col;
+  }
+  span::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  span::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
